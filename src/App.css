@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.calculator {
+  width: 360px;
+  margin: 40px auto;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Roboto', sans-serif;
+}
+
+.display {
+  background-color: #e0e0e0;
+  color: #333;
+  text-align: right;
+  padding: 24px;
+  font-size: 3em;
+  font-weight: 400;
+  border-bottom: none;
+  transition: background-color 0.3s ease;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 12px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.8em;
+  border: none;
+  background-color: #fff;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+  border-radius: 16px;
+  margin: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #e8e8e8;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.operator {
+  background-color: #6200ee;
+  color: #fff;
+}
+
+.operator:hover {
+  background-color: #7c4dff;
+}
+
+.function {
+  background-color: #fff;
+  color: #6200ee;
+}
+
+.function:hover {
+  background-color: #e8e8e8;
+  color: #6200ee;
+}
+
+.equals {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.equals:hover {
+  background-color: #26c6da;
+}
+
+.zero {
+  grid-column: span 2;
+  border-radius: 20px;
+}
